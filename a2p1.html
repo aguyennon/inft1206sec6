@@ -1,0 +1,140 @@
+<!--
+	Name: Alexis Guyennon
+	File: a2p1.html
+	Date: June 5th 2024
+	Assignment 2: Splash page and resizable pictures
+	-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla Page</title>
+<style>
+	/* Setup */
+	      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(./assets/pattern.png);
+      }
+
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+
+      /* Header styling */
+      header {
+        height: 150px;
+      }
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+      main {
+        background: #cccccc;
+      }
+
+      article {
+        padding: 20px;
+		background-color: #cccccc30;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Red panda image */
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+</style>
+</head>
+<header>
+	<h1>Mozilla</h1>
+	<img src="../a2/firefoxlogo120.png.jpg" alt="Small Firefox">
+</header>
+<article><iframe>width="400" height="215" src="https://www.youtube.com/embed/ojcNcvb1olg?si=uSvGSlXgD07wTT2d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<h2><b>Rocking the free web</b></h2>
+	<p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+	<p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Media for Red Panda</a> by Mathias Appel.</p>
+</article><body>
+	<div class="further-info">
+		<a href="https://www.mozilla.org/en-US/firefox/new/">
+		  <img srcset="../a2/firefoxlogo400.png.jpg 400w, ../a2/firefoxlogo120.png.jpg 120w"
+		  sizes="(max-width: 400px) 120px, 400px"
+		  src="../a2/firefoxlogo400.png.jpg" alt="Firefox Logo">
+		</a>
+		<a href="https://www.mozilla.org/">
+		  <img srcset="../a2/mozilladinosaurhead400.png.jpg 400w, ../a2/mozilladinosaurhead120.png.jpg 120w"
+		  sizes="(max-width: 400px) 120px, 400px"
+		  src="../a2/mozilladinosaurhead400.png.jpg" alt="Dinosaur Head">
+		</a>
+		<a href="https://addons.mozilla.org/">
+		  <img srcset="../a2/firefoxaddons400.jpg.jpg 400w, ../a2/firefoxaddons120.jpg.jpg 120w"
+		  sizes="(max-width: 400px) 120px, 400px"
+		  src="../a2/firefoxaddons400.jpg.jpg" alt="Firefox Addons">
+		</a>
+		<a href="https://developer.mozilla.org/en-US/">
+		  <img src="../a2/mdn.svg" alt="Developer Icon">
+		</a>
+		<div class="clearfix"></div>
+	</div>
+	<div class="red panda">
+		<picture>
+		  <source media="(max-width: 1200px)" srcset="../a2/redpanda1200.jpg">
+		  <source media="(max-width: 600px)" srcset="../a2/redpanda600.jpg.jpg">
+		  <img src="../a2/redpanda1200.jpg" alt="Red Panda">
+		</picture>                
+	</div>
+	
+</body>
+</html>
