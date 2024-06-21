@@ -1,0 +1,116 @@
+
+body, h1, h2, p, ul, li, nav, article, aside, img, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, nav, main, article, aside, footer {
+    display: block;
+}
+
+.logo {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+
+nav {
+    background: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    flex: 3;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+article img.feature {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 40%;
+    height: auto;
+}
+
+aside {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    list-style: none;
+    padding: 0;
+}
+
+.photos li {
+    margin: 0;
+}
+
+.photos li img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+}
